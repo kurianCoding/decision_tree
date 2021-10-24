@@ -1,8 +1,10 @@
 # decisision tree is an algorithm to classiffy given data
-# it uses variation in data to classify
-# There is also another attribute which can be used to branch to 
-# different decision branches known as the variation gain
-# https://www.kaggle.com/itachi9604/disease-symptom-description-dataset
+    # it uses two parameters to verify if a given variable
+    # can be used as a pivot or a branching point
+    # these two parameters are 
+        # 1. gini index
+        # 2. percentage gain
+# https://www.kaggle.com/uciml/pima-indians-diabetes-database
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 from sklearn import metrics # metrics is used to calculate accuracy of the model
